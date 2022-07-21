@@ -5,7 +5,7 @@ package top.silentyears.freetime.constant;
  * @author : WuChaojie
  * @date : 2022/7/18 13:59
  */
-public class CornConstant {
+public interface CornConstant {
 
     /**
      * 每天09:00:00
@@ -21,4 +21,7 @@ public class CornConstant {
      * 每月1号的08:00:00
      */
     String MONTH_01_08_00_00 = "0 0 8 1 * *";
+
+
+    String test = "0/30 * * * * *";
 }

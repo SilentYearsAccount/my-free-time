@@ -23,7 +23,7 @@
     </select>
     <!-- 按日期分组查询指定日期所有已经完成的任务 -->
     <select id="listFinishTaskByDate" resultType="top.silentyears.freetime.entity.DailyTask">
-        SELECT finish_time finishTime, GROUP_CONCAT(task_info) taskInfo FROM daily_task WHERE finish_time = #{date} AND is_finish = 1 GROUP BY finish_time
+        SELECT finish_time finishTime, GROUP_CONCAT(task_info) taskInfo FROM daily_task WHERE finish_time like #{date} AND is_finish = 1 GROUP BY finish_time
     </select>
     <!-- 根据日期分组查询所有已经完成的任务 -->
     <select id="listFinishTask" resultType="top.silentyears.freetime.entity.DailyTask">

@@ -1,6 +1,8 @@
 package top.silentyears.freetime.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.web.bind.annotation.*;
 import top.silentyears.freetime.common.HttpResult;
 import top.silentyears.freetime.common.ResultUtil;
